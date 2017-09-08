@@ -1,4 +1,4 @@
-package log4j;
+package headlessBrowserDemo;
 
 import static org.junit.Assert.*;
 import static org.testng.Assert.assertEquals;
@@ -21,7 +21,8 @@ public class PhantomjsTest2 {
 
 	@Test
 	public void GoogleSearch() {
-		System.setProperty("phantomjs.binary.path", "./src/test/resources/drivers/phantomjs.exe");		
+	
+		System.setProperty("phantomjs.binary.path", "/Users/SuperUser/Documents/Libraries/drivers/phantomjs.exe");		
         WebDriver driver = new PhantomJSDriver();
      driver.get("http://www.google.com"); 
 
